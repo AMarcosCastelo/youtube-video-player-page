@@ -14,21 +14,24 @@ header {
   z-index: 10;
 }
 
-#navbar-content {
+header>div {
   align-items: center;
-  display: flex;
   padding: 0 16px;
   width: 100%;
 }
 
-#nav-icon {
+.flex-container {
+  display: flex;
+}
+
+.nav-icon {
   width: 24px;
   height: 24px;
   padding: 8px;
   margin: 0 16px 0 0;
   color: #606060;
 }
-#nav-icon button {
+.nav-icon button {
   color: #606060;
   background-color: rgba(0, 0, 0, 0);
   border: 0;
@@ -36,11 +39,11 @@ header {
   padding: 0;
 }
 
-#navbar-logo {
+.navbar-logo {
   height: 24px;
   width: 129px;
 }
-#navbar-logo img {
+.navbar-logo img {
   margin-top: 3px;
   margin-left: 1px;
 }
@@ -72,7 +75,7 @@ form button.material-icons {
   font-size: 20px;
 }
 
-#container-form {
+.container-form {
   background-color: white;
   border: 1px solid #ccc;
   border-right: none;
@@ -82,7 +85,7 @@ form button.material-icons {
   width: 100%;
 }
 
-#container-form2 {
+.container-form2 {
   height: 24px;
   background: transparent;
   width: 100%;
@@ -91,30 +94,28 @@ form button.material-icons {
 #container-icon {
   position: relative;
   line-height: 24px;
-  float: right;
   vertical-align: top;
   font-size: 16px;
   padding: 0 2px;
   width: 100%;
 }
 
-#container-icon2 {
+.container-icon2 {
   float: right;
 }
-#container-icon2 a {
+.container-icon2 a {
   color: #606060;
   padding: 0 4px;
   display: inline-block;
 }
 
-#div-input {
+#container-icon div.flex-container {
   padding: 0;
   height: 100%;
   overflow: hidden;
-  display: flex;
   align-content: center;
 }
-#div-input input {
+#container-icon input {
   border: none;
   padding: auto 0;
   margin: 0px;
@@ -135,7 +136,6 @@ button {
 #buttons div {
   width: 40px;
   height: 40px;
-  display: flex;
   margin-right: 8px;
 }
 #buttons div button {
@@ -160,7 +160,7 @@ main {
   width: 100%;
 }
 
-#primary-container {
+main>div {
   width: 917px;
   margin-left: 24px;
   padding-right: 24px;
@@ -180,26 +180,23 @@ main {
   font-weight: 400;
 }
 #principal-info div {
-  display: flex;
   justify-content: space-between;
   align-items: center;
   height: 40px;
   color: #606060;
 }
 
-#menu-info {
-  display: flex;
+.menu-info {
   justify-content: center;
   max-width: 429.2px;
   height: 100%;
   margin: 0;
 }
-#menu-info div {
-  display: flex;
+.menu-info div {
   justify-content: center;
   padding-right: 15px;
 }
-#menu-info div a {
+.menu-info div a {
   font-size: 12px;
   text-decoration: none;
   color: rgba(96, 96, 96, 0.7);
@@ -223,22 +220,19 @@ main {
   padding-bottom: 25px;
 }
 
-#top-row {
-  display: flex;
-  flex-direction: row;
+.top-row {
   height: 51px;
   padding-top: 16px;
 }
-#top-row #img-channel {
+.top-row .img-channel {
   cursor: pointer;
   margin-right: 16px;
 }
-#top-row #img-channel img {
+.top-row .img-channel img {
   border-radius: 50%;
 }
 
 #channel-info {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   width: 743.391px;
@@ -260,13 +254,11 @@ main {
   text-transform: none;
 }
 
-#div-enrolled {
-  display: flex;
-  flex-direction: row;
+.div-enrolled {
   height: 40px;
 }
 
-#enrolled button {
+.enrolled button {
   background-color: #eeeeee;
   border: none;
   color: rgba(17, 17, 17, 0.6);
@@ -278,7 +270,7 @@ main {
   text-transform: uppercase;
 }
 
-#bell-icon button.material-icons {
+.bell-icon button.material-icons {
   background: none;
   border: none;
   color: rgba(96, 96, 96, 0.7);
@@ -293,23 +285,19 @@ main {
   line-height: 21px;
 }
 
-#content {
+.content {
   display: block;
   max-width: 615px;
 }
 
-#div-category {
+.div-category {
   max-width: 615px;
-  display: flex;
   flex-direction: row;
   align-items: flex-start;
   margin: 8px 0;
 }
 
-#category {
-  margin-right: 16px;
-}
-#category h4 {
+.category h4 {
   margin: 0;
   color: #606060;
   width: 110px;
@@ -318,21 +306,20 @@ main {
   flex: none;
 }
 
-#link-category {
-  display: flex;
+.link-category {
   flex-direction: row;
 }
-#link-category a {
+.link-category a {
   color: #065fd4;
   text-decoration: none;
   font-weight: 600;
 }
 
-#btn-show button {
+.btn-show button {
   background: none;
   border: none;
   text-transform: uppercase;
-  color: rgba(17, 17, 17, 0.6);
+  color: rgba(17, 17, 17, 0.7);
   font-size: 13px;
   font-weight: 400;
   line-height: 21px;
@@ -340,19 +327,17 @@ main {
   margin-top: 8px;
 }
 
-#header-comments {
-  display: flex;
+.header-comments {
   flex-direction: column;
   margin-bottom: 32px;
   margin-top: 24px;
 }
 
-#title {
-  display: flex;
+.title {
   flex-direction: row;
   margin-bottom: 24px;
 }
-#title h4 {
+.title h4 {
   margin: 0 32px 0 0;
   font-size: 16px;
   font-weight: 400;
@@ -360,37 +345,36 @@ main {
   padding-top: 4px;
 }
 
-#div-rank {
-  display: flex;
+.div-rank {
   flex-direction: row;
   justify-content: center;
   cursor: pointer;
 }
-#div-rank button {
+.div-rank button {
   background: none;
   border: none;
   color: #606060;
 }
-#div-rank span {
+.div-rank span {
   text-transform: uppercase;
   padding-top: 5px;
   color: #606060;
   font-size: 14px;
 }
 
-#comment {
+.flex-row {
   display: flex;
   flex-direction: row;
 }
 
-#div-input-comment {
+.div-input-comment {
   display: block;
   height: 25.18px;
   font-size: 14px;
   width: 100%;
   padding-top: 10px;
 }
-#div-input-comment input {
+.div-input-comment input {
   border: none;
   padding: auto 0;
   margin: 0px;
@@ -401,13 +385,11 @@ main {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#comment-cancel {
-  display: flex;
-  flex-direction: row;
+.comment-cancel {
   justify-content: flex-end;
   margin-top: 3px;
 }
-#comment-cancel a {
+.comment-cancel a {
   color: #606060;
   text-decoration: none;
   text-transform: uppercase;
@@ -417,7 +399,7 @@ main {
   height: 37px;
 }
 
-#comment-cancel #link-comment {
+.comment-cancel #link-comment {
   background-color: #cccccc;
   color: white;
   border: none;
@@ -429,11 +411,6 @@ main {
 
 .comment {
   margin-bottom: 24px;
-}
-
-.comment-body {
-  display: flex;
-  flex-direction: row;
 }
 
 .img-comment {
@@ -448,11 +425,6 @@ main {
 
 .main .header {
   margin-bottom: 2px;
-}
-
-.header-author {
-  display: flex;
-  flex-direction: row;
 }
 
 .profile {
@@ -485,8 +457,6 @@ main {
 
 .action {
   margin-top: 10px;
-  display: flex;
-  flex-direction: row;
   align-items: center;
   margin-left: -6;
 }
@@ -516,27 +486,24 @@ main {
 }
 
 #secondary-container {
-  display: flex;
   flex-direction: column;
   padding-right: 24px;
   width: 402;
 }
 
-#autoplay-header {
+.autoplay-header {
   display: block;
   margin-bottom: 16px;
   padding-bottom: 8px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#play-header {
-  display: flex;
-  flex-direction: row;
+.play-header {
   align-items: center;
   margin-bottom: 12px;
 }
 
-#upnext {
+.upnext {
   color: #0a0a0a;
   font-size: 16px;
   font-weight: 400;
@@ -544,7 +511,7 @@ main {
   width: 179.016px;
 }
 
-#autoplay {
+.autoplay {
   color: #606060;
   font-size: 12px;
   font-weight: 600;
@@ -552,15 +519,8 @@ main {
 }
 
 .img-video {
-  display: flex;
   position: relative;
-  flex-direction: row;
   padding-bottom: 8px;
-}
-
-.next-video {
-  display: flex;
-  flex-direction: row;
 }
 
 .video-img {
@@ -591,8 +551,6 @@ main {
 }
 
 .metadata-channel {
-  display: flex;
-  flex-direction: row;
   align-items: center;
   max-width: 100%;
   font-size: 13px;
@@ -659,5 +617,3 @@ main {
   background-color: #065fd4;
   box-shadow: 3px 6px 18px 0px rgba(0, 0, 0, 0.2);
 }
-
-/*# sourceMappingURL=style.css.map */
