@@ -1,4 +1,4 @@
-# Intuit Signup Page
+# Youtube video player page
 
 Hello! I'm Antonio Marcos and this is my **PROJECT: EMBEDDING IMAGES AND VIDEO** from the curriculum of The Odin Project's 
 [curriculum](https://www.theodinproject.com/courses?ref=homenav).
